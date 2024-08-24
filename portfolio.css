@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+   
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding:10px,10% ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+    height: 140px;   
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style:none ;
+    margin:10px 20px ;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:18px ;
+    position: relative;
+}
+nav ul li a::after{
+
+    content: '';
+    width:0 ;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px ;
+transition:0.5s ;
+
+}
+nav ul li a:hover::after{
+    width:100% ;
+    
+}
+.header-text{
+    margin-top:20% ;
+    margin-left:10% ;
+    font-size:40px ;
+    text-align: left;
+    margin-bottom: 10%;
+}
+.header-text h1{
+    color: #ff004f;
+    
+}
+.header-text  span{
+   
+    font-size:30px ;
+    margin-top:20px ;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-bottom:10% ;
+}
+.self-img{
+   
+    width: 20%;
+    height:60% ;
+    position: absolute;
+    bottom: 2px;;
+    right:30% ;
+    margin-bottom: 7%;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:20px ;
+    margin-bottom:50px ;
+    margin-top:50% ;
+
+}
+.headings{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #ff004f;
+    text-align: center;
+    padding: 10px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding:10px ;
+}
+#intro h2{
+    font: size 2rem; 
+    margin-bottom:20px ;
+}
+#About{
+    padding: 80px 0;
+    color: #ababab;
+}
+.about-head{
+    box-sizing: content-box;
+    color: #ff004f;
+    font-weight: 600;
+    text-align: center;
+    
+    margin-bottom:10% ;
+    font-size: 30px
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis:32% ;
+    margin-left: 20px;
+    color: azure;
+    list-style: circle;
+}
+.about-col-2{
+    flex-basis:32% ;
+    color: azure;
+    list-style: circle;
+}
+
+.about-col-3{
+    flex-basis:32% ;
+    margin-right: 20px;
+    color: azure;
+    list-style: circle;
+}
+.about-col-1 ul li{
+    font-size:25px ;
+}
+.about-col-2 ul li{
+    font-size:25px ;
+}
+.about-col-3 ul li{
+    font-size:25px ;
+}
+.skills{
+    color: aqua;
+}
+.experience{
+    color:yellow ;
+}
+.education{
+    color:orange ;
+}
+
+#cotact{
+    padding-top:  80px 0 ;
+    margin-bottom: 10%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact-left{
+    flex-basis: 35%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.contact-right{
+    flex-basis: 50%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-right: 50px;
+}
+.contact-left p{
+    margin-top:35px ;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform:translate(-5px) ;
+}
+.btn-2{
+    display: inline-block;
+    color: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border:0 ;
+    outline: none;
+    background: #262626 ;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn-2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: #ff004f;
+}
+@media only screen and(max-width:600px){
+    
+        .header-text{
+            margin-top: 100%;
+            font-size: 16px;
+
+        }
+        .header-text h1{
+            font-size: 30px;
+        }
+    
+    
+}
+
+
+
+
+
+
